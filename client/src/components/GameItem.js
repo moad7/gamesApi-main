@@ -5,6 +5,7 @@ import { GrLogout } from "react-icons/gr";
 
 const GameItem = props => {
 
+    //this is game item
     const baseURL = 'http://localhost:3001/api';
     const [isEditable, setIsEditable] = useState(false);
     const [gameName, setGameName] = useState(props.game.gameName);
@@ -57,7 +58,7 @@ const GameItem = props => {
                                 <Button variant="info" onClick={() => setIsEditable(!isEditable)}>Back</Button>
                             </Col>
                             <Col>
-                                <Button variant="success" onClick={updateGame}>Save</Button>
+                                <Button variant="success"   onClick={updateGame}>Save</Button>
                             </Col>
                         </Row>
                     </Container>
